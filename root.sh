@@ -1,6 +1,9 @@
 echo
 echo ----- CF-Auto-Root-falconumts-falconreteu-xt1032 -----
 echo
+echo Origin from http://www.theandroidsoul.com/chainfire-releases-android-5-0-root-moto-g-moto-x-2013-2014-editions/
+echo Tweeked by @leaskh.
+echo
 echo Please make sure your device is in bootloader/fastboot mode before continuing.
 echo
 echo ***WARNING*** ALL YOUR DATA *MAY* BE WIPED ! ***WARNING***
@@ -17,9 +20,9 @@ echo Press Ctrl+C to cancel !
 echo
 echo Press ENTER to continue
 read
-sudo chmod +x tools/fastboot-linux
-sudo tools/fastboot-linux oem unlock
-sudo tools/fastboot-linux boot image/CF-Auto-Root-falconumts-falconreteu-xt1032.img
+brew install android-platform-tools
+sudo fastboot oem unlock
+sudo fastboot boot CF-Auto-Root-falconumts-falconreteu-xt1032.img
 echo
 echo It may take a minute or so for the red Android to appear. If it doesn\'t show up
 echo at all, there may be a problem.
